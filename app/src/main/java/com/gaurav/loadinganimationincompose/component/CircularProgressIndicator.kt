@@ -1,7 +1,7 @@
 package com.gaurav.loadinganimationincompose.component
 
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -29,24 +29,25 @@ fun CircularLoadingExample() {
     }
 
     Box(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier.size(100.dp),
         contentAlignment = Alignment.Center
     ) {
         if (isLoading) {
             CircularProgressIndicator(
                 color = Color.Blue,
-                strokeWidth = 5.dp
+                strokeWidth = 3.dp
             )
         } else {
-            Text("Data Loaded!", fontSize = 20.sp, fontWeight = FontWeight.Bold)
+            Text("Data Loaded!", fontSize = 12.sp, fontWeight = FontWeight.Bold)
         }
     }
 }
+
 @Preview(
     showBackground = true,
     showSystemUi = true
 )
 @Composable
-private fun CircularLoadingPreview(){
+private fun CircularLoadingPreview() {
     CircularLoadingExample()
 }

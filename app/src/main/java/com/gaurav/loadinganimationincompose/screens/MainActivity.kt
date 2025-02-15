@@ -10,14 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.gaurav.loadinganimationincompose.component.BouncingBallLoading
-import com.gaurav.loadinganimationincompose.component.CircularLoadingExample
 import com.gaurav.loadinganimationincompose.component.CustomToolBar
-import com.gaurav.loadinganimationincompose.component.DotsLoadingIndicator
-import com.gaurav.loadinganimationincompose.component.LinearLoadingExample
-import com.gaurav.loadinganimationincompose.component.ShimmerLoadingEffect
-import com.gaurav.loadinganimationincompose.component.ThreeBouncingBalls
-import com.gaurav.loadinganimationincompose.component.TripleOrbitLoadingAnimation
 import com.gaurav.loadinganimationincompose.ui.theme.LoadingAnimationInComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -44,13 +37,7 @@ fun MainScreen() {
                     .fillMaxSize()
                     .padding(padding)
             ) {
-//                CircularLoadingExample()
-//                LinearLoadingExample()
-//                ShimmerLoadingEffect(true)
-//                DotsLoadingIndicator()
-//                BouncingBallLoading()
-//                ThreeBouncingBalls()
-                TripleOrbitLoadingAnimation()
+                LoaderIndicatorScreen()
             }
         }
     )
