@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.gaurav.loadinganimationincompose.component.BlurredAnimatedText
 import com.gaurav.loadinganimationincompose.component.CircularLoadingExample
 import com.gaurav.loadinganimationincompose.component.DotsLoadingIndicator
 import com.gaurav.loadinganimationincompose.component.LinearLoadingExample
@@ -47,18 +48,20 @@ fun LoaderIndicatorScreen() {
             color = Color.White // Text color set to transparent to enable gradient
         )
         CircularLoadingExample()
-        Spacer(modifier = Modifier.size(20.dp))
+        Spacer(modifier = Modifier.size(10.dp))
         DotsLoadingIndicator()
         Spacer(modifier = Modifier.size(10.dp))
         LinearLoadingExample()
-        Spacer(modifier = Modifier.size(20.dp))
+        Spacer(modifier = Modifier.size(10.dp))
         ThreeBouncingBalls()
-        Spacer(modifier = Modifier.size(20.dp))
+        Spacer(modifier = Modifier.size(10.dp))
         TripleOrbitLoadingAnimation()
-        Spacer(modifier = Modifier.size(20.dp))
+        Spacer(modifier = Modifier.size(10.dp))
         PulseAnimation()
         Spacer(modifier = Modifier.size(20.dp))
         LoadCircularLoader(true)
+        Spacer(modifier = Modifier.size(20.dp))
+        BlurredAnimatedText("Hello Everyone!")
     }
 }
 

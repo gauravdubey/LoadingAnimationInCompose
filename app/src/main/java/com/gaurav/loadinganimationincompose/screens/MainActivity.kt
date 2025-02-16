@@ -13,12 +13,12 @@ import androidx.compose.ui.Modifier
 import com.gaurav.loadinganimationincompose.component.CustomToolBar
 import com.gaurav.loadinganimationincompose.ui.theme.LoadingAnimationInComposeTheme
 
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+class MainActivity : ComponentActivity() { // Yellow color bracket
+    override fun onCreate(savedInstanceState: Bundle?) { // Green color bracket
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContent {
-            LoadingAnimationInComposeTheme {
+        setContent { // Blue color bracket
+            LoadingAnimationInComposeTheme { // Purple color bracket
                 MainScreen()
             }
         }
@@ -42,3 +42,4 @@ fun MainScreen() {
         }
     )
 }
+
